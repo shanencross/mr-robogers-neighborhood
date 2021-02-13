@@ -53,7 +53,7 @@ Test 4: "It should return an array of 0, "Beep!", "Boop!", and "Won't you be my 
 Expect(beepBoop(3).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]));
 
 Test 5: "If any number between 0 and 9 is inputted, it should return the range of numbers from 0 to the input, except 1, 2, and 3 are replaced with "Beep!", "Boop!", and "Won't you be my neightbor?" respectively
-Expect(beepBoop(9).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5", "6", "7", "8", "9"));
+Expect(beepBoop(9).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5", "6", "7", "8", "9"]));
 
 
 ## Known Bugs
