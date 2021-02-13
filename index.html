@@ -6,8 +6,47 @@
 	<script src="js/jquery-3.5.1.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/testing.js"></script>
+	<title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
+	<div class=jumbotron>
+		<h1>Mr. Roboger's Neighborhood</h1>
+	</div>
+	<div class="container">
+		<div id="intro">
+			<p>Give me a number, and I'll give <em>you</em> a <strong>list</strong> of numbers!</p>
+			
+			<h2>But not just any list...</h2>
+
+			<p>This list will be processed by Mr. Roboger.</p>
+			<p>When he sees a 1, he'll go...</p>
+			<h4>Beep!</h4>
+			<p>When he sees a 2, instead he'll go...</p>
+			<h3>Boop!</h3>
+			<p>But 3 is his favorite. If he sees a 3, Mr. Roboger's will ask you:</p>
+			<h2>Will you by my neighbor?</h2>
+		</div>
+		<br>
+		<div class="userInput">
+			<p>So give me a number already, to see Mr. Roboger in action!!</p>
+
+			<form id="inputForm">
+				<div class="form-group">
+					<label for="numberInput">A number for Mr. Roboger:
+						<input name="numberInput" class="form-control" type="number">
+			 		</label>
+				</div>
+
+				<button class="btn-primary" type="submit">Submit!!!</button>
+			</form>
+		</div>
+		<br>
+		<div id="results">
+			<p>Mr. Roboger says:</p>
+			<ul id="numberList"></ul>
+		</div>
+		
+	</div>
 
 </body>
 </html>
