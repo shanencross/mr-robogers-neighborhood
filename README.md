@@ -1,39 +1,52 @@
-# _{Application Name}_
+# Mr. Roboger's Neighborhood
 
-#### _{Brief description of application}_
+#### Learning project for Epicodus coding school. Website that outputs a list of integers between 0 and a user-inputted number, but with certain integers replaced with certain phrases, including a line from Mr. Roger's Neighborhood
 
-#### By _**{List of contributors}**_
+#### Shanen Cross
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* jQuery
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+Website takes a number as input from the user. It outputs a list ranging from 0 to this number, but replaces certain numbers with certain phrases.
+
+The rules for the replacements are:
+* Numbers that contain a 1 in any digit are replaced with "Beep!"
+* Numbers that contain a 2 in any digit are replaced with "Boop!"
+* Numbers that contain a 3 in any digit are replaced with "Won't you be my neighbor?"
+
+These rules are listed from lowest to highest priority. So, for example, 23 would become "Won't you be my neighbor?", because the rule for 3 is prioritized above the one for 2.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+To run locally:
+* Install git
+* Use git to clone this repository to a local directory
+* Open _index.html_ in a web browser
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+Or, to view online:
+* Visit shanencross.github.io/mr-robogers-neighborhood/
+
+Once the website is open:
+* Input a number in the textbox, and press submit to see the result
+* To see another result, input another number in the textbox, and press submit again
+
+# Tests
+
+To be written.
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+None.
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+(MIT)[https://choosealicense.com/licenses/mit/]
 
-## Contact Information
-
-_{Add your contact information here.}_
+Copyright 2021 Shanen Cross
