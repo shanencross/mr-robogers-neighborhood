@@ -5,6 +5,7 @@
 // Run tests for all functions
 function runTests() {
 	testBeepBoop();
+	testGetDigits();
 }
 
 // Test the beepBoop function
@@ -40,17 +41,33 @@ function testBeepBoop() {
 	};
 
 	tests = [test1, test2, test3, test4, test5, test6];
+	runTestArray(tests, beepBoop);
+}
 
-	for (let i=0; i<tests.length; i++) {
-		const test = tests[i];
+// Test the getDigits function
+function testGetDigits() {
+	test1 = {
+		input: 6,
+		expectedOutput: [6]
+	};
+
+	tests = [test1];
+	runTestArray(tests, getDigits);
+}
+
+// Iterate over an array of tests for a given function and run them
+function runTestArray(testArray, functionToTest) {
+	console.log("Testing " + functionToTest.name);
+	for (let i=0; i<testArray.length; i++) {
+		const test = testArray[i];
 		const testNumber = i + 1;
-		runBeepBoopTest(test, testNumber);
+		runTest(functionToTest, test, testNumber);
 	}
 }
 
-// Run a single specified test for the beepBoop function
-function runBeepBoopTest(test, testNumber) {
-	const output = beepBoop(test.input);
+// Run a single specified test for a given function
+function runTest(testFunction, test, testNumber) {
+	const output = testFunction(test.input);
 
 	console.log("Test #" + testNumber);
 	console.log("Input:");
