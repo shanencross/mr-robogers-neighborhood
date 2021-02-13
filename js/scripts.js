@@ -1,6 +1,7 @@
 // scripts.js
 // Main script for website
 
+// Gets user input and outputs results
 $(document).ready(function() {
 	$("#inputForm").submit(function(event) {
 		event.preventDefault();
@@ -17,6 +18,12 @@ $(document).ready(function() {
 	})
 });
 
+// Given a number, returns array of numbers ranging from 0 up to and including the given number...
+// ...except certain numberse are replaced.
+// A number where any digit is 1 becomes "Beep!"
+// A number where any digit is 2 becomes "Boop!"
+// A Number where any digit is 3 becomes "Won't you be my neighbor?"
+// The rule for 3 is prioritized over the rule for 2, which is prioritized over the rule for 1.
 function beepBoop(number) {
 	let result = [];
 
@@ -40,6 +47,7 @@ function beepBoop(number) {
 	return result;
 }
 
+// Given a number, returns an array listing its digits, from the lowest place to the highest place.
 function getDigits(number) {
 	let digits = [];
 	for (let currentNumber = number; number >= 1; number = Math.floor(number / 10)) {
