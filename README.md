@@ -71,10 +71,10 @@ Test 2: Given a two-digit number, should return an array containing each digit o
 Expect(getDigits(76).toEqual([6, 7]));
 
 Test 3: Given a three-digit number, should return an array containing each digit of that number, from the ones place, to the tens place, to the hundreds place.
-Expect(getDigits(358).toEqual([3, 5, 8]));
+Expect(getDigits(358).toEqual([8, 5, 3]));
 
 Test 4: For a number with any amount of digits, should return an array containing each digit of that number, from the lowest place to the highest place.
-Expect(getDigits(4253453).toEqual([4, 2, 5, 3, 4, 5, 3]));
+Expect(getDigits(4253453).toEqual([3, 5, 4, 3, 5, 2, 4]));
 
 ## Known Bugs
 
