@@ -36,15 +36,18 @@ function testBeepBoop() {
 
 	tests = [test1, test2, test3, test4, test5];
 
-	for (const test of tests) {
-		runBeepBoopTest(test);
+	for (let i=0; i<tests.length; i++) {
+		const test = tests[i];
+		const testNumber = i + 1;
+		runBeepBoopTest(test, testNumber);
 	}
 }
 
 // Run a single specified test for the beepBoop function
-function runBeepBoopTest(test) {
+function runBeepBoopTest(test, testNumber) {
 	const output = beepBoop(test.input);
 
+	console.log("Test #" + testNumber);
 	console.log("Input:");
 	console.log(test.input);
 	console.log("Output:");
