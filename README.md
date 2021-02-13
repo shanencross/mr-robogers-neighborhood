@@ -41,7 +41,19 @@ Once the website is open:
 
 Describe: beepBoop()
 Test 1: "It should return an array with a 0 if the number 0 is inputted"
-Expect(beepBoop(0)).toEqual([0]));
+Expect(beepBoop(0).toEqual([0]));
+
+Test 2: "It should return an array of 0 and "Beep!" if the number 1 is inputted"
+Expect(beepBoop(1).toEqual([0, "Beep!"]));
+
+Test 3: "It should return an array of 0, "Beep!", and "Boop!" if the number 2 is inputted
+Expect(beepBoop(2).toEqual([0, "Beep!", "Boop!"]));
+
+Test 4: "It should return an array of 0, "Beep!", "Boop!", and "Won't you be my neighbor?" if the number 3 is inputted
+Expect(beepBoop(3).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]));
+
+Test 5: "If any number between 0 and 9 is inputted, it should return the range of numbers from 0 to the input, except 1, 2, and 3 are replaced with "Beep!", "Boop!", and "Won't you be my neightbor?" respectively
+Expect(beepBoop(9).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5", "6", "7", "8", "9"));
 
 
 ## Known Bugs
