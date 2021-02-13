@@ -5,14 +5,16 @@ function beepBoop(number) {
 	let result = [];
 
 	for (let i=0; i<=number; i++) {
-		if (i === 1) {
-			result.push("Beep!");
+		const digits = getDigits(i);
+
+		if (digits.includes(3)) {
+			result.push("Won't you be my neighbor?");
 		}
-		else if (i === 2) {
+		else if (digits.includes(2)) {
 			result.push("Boop!");
 		}
-		else if (i === 3) {
-			result.push("Won't you be my neighbor?");
+		else if (digits.includes(1)) {
+			result.push("Beep!");
 		}
 		else {
 			result.push(i);
