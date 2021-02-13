@@ -15,7 +15,7 @@ function beepBoop(number) {
 			result.push("Won't you be my neighbor?");
 		}
 		else {
-			result.push(0);
+			result.push(i);
 		}
 	}
 
