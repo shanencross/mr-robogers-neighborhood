@@ -11,6 +11,9 @@ function beepBoop(number) {
 		else if (i === 2) {
 			result.push("Boop!");
 		}
+		else if (i === 3) {
+			result.push("Won't you be my neighbor?");
+		}
 		else {
 			result.push(0);
 		}
