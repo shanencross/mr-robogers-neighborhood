@@ -22,6 +22,6 @@ function beepBoop(number) {
 	return result;
 }
 
-function getDigits() {
-	return [];
+function getDigits(number) {
+	return [number];
 }
