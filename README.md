@@ -39,7 +39,10 @@ Once the website is open:
 
 # Tests
 
-To be written.
+Describe: beepBoop()
+Test 1: "It should return an array with a 0 if the number 0 is inputted"
+Expect(beepBoop(0)).toEqual([0]));
+
 
 ## Known Bugs
 
