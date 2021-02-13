@@ -63,6 +63,10 @@ Expect(beepBoop(9).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4,
 Test 6: "If any number between 0 and 19 is inputted, it should return the range of numbers from 0 to the input, except any number with 1, 2, or 3 as a digit is replaced with "Beep!", "Boop!", or "Won't you be my neighbor?" respectively, with the rule for 3 prioritized above 2, and the rule for 2 prioritized above 1"
 Expect(beepBoop(19).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!"]));
 
+Test 7: If any two-digit number inputted, it should return the range of numbers from 0 to the input, with the same exceptions list previously"
+Expect(beepBoop(99).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?", "Boop!", "Boop!", "Boop!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", "Won't you be my neighbor?", 40, "Beep!", "Boop!", "Won't you be my neighbor?", 44, 45, 46, 47, 48, 49, 50, "Beep!", "Boop!", "Won't you be my neighbor?", 54, 55, 56, 57, 58, 59, 60, "Beep!", "Boop!", "Won't you be my neighbor?", 64, 65, 66, 67, 68, 69, 70, "Beep!", "Boop!", "Won't you be my neighbor?", 74, 75, 76, 77, 78, 79, 80, "Beep!", "Boop!", "Won't you be my neighbor?", 84, 85, 86, 87, 88, 89, 90, "Beep!", "Boop!", "Won't you be my neighbor?", 94, 95, 96, 97, 98, 99]));
+
+
 Describe getDigits()
 Test 1: Given a one-digit number, should return an array containing that number.
 Expect(getDigits(6).toEqual([6]));
