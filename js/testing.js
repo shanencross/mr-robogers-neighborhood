@@ -58,12 +58,12 @@ function testGetDigits() {
 
 	test3 = {
 		input: 358,
-		expectedOutput: [3, 5, 8]
+		expectedOutput: [8, 5, 3]
 	};
 
 	test4 = {
 		input: 4253453,
-		expectedOutput: [4, 2, 5, 3, 4, 5, 3]
+		expectedOutput: [3, 5, 4, 3, 5, 2, 4]
 	}
 
 	tests = [test1, test2, test3, test4];
