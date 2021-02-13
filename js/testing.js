@@ -66,7 +66,7 @@ function testGetDigits() {
 		expectedOutput: [4, 2, 5, 3, 4, 5, 3]
 	}
 
-	tests = [test1];
+	tests = [test1, test2, test3, test4];
 	runTestArray(tests, getDigits);
 }
 
