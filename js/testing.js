@@ -31,7 +31,7 @@ function testBeepBoop() {
 
 	const test5 = {
 		input: 9, 
-		expectedOutput: [0, "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5", "6", "7", "8", "9"]
+		expectedOutput: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9]
 	};
 
 	tests = [test1, test2, test3, test4, test5];
