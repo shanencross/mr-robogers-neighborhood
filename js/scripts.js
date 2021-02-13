@@ -23,5 +23,11 @@ function beepBoop(number) {
 }
 
 function getDigits(number) {
-	return [number];
+	const onesDigit = number % 10;
+	const tensDigit = Math.floor(number / 10);
+	digits = [onesDigit];
+	if (tensDigit != 0) {
+		digits.push(tensDigit);
+	}
+	return digits;
 }
