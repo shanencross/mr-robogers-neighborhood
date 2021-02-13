@@ -58,6 +58,19 @@ Expect(beepBoop(9).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4,
 Test 6: "If any number between 0 and 19 is inputted, it should return the range of numbers from 0 to the input, except any number with 1, 2, or 3 as a digit is replaced with "Beep!", "Boop!", or "Won't you be my neighbor?" respectively, with the rule for 3 prioritized above 2, and the rule for 2 prioritized above 1"
 Expect(beepBoop(19).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", 14, 15, 16, 17, 18, 19]));
 
+Describe getDigits()
+Test 1: Given a one-digit number, should return an array containing that number.
+Expect(getDigits(6).toEqual([6]));
+
+Test 2: Given a two-digit number, should return an array containing each digit of that number, from the ones place to the tens place.
+Expect(getDigits(76).toEqual([6, 7]));
+
+Test 3: Given a three-digit number, should return an array containing each digit of that number, from the ones place, to the tens place, to the hundreds place.
+Expect(getDigits(358).toEqual([3, 5, 8]));
+
+Test 4: For a number with any amount of digits, should return an array containing each digit of that number, from the lowest place to the highest place.
+Expect(getDigits(4253453).toEqual([4, 2, 5, 3, 4, 5, 3]));
+
 ## Known Bugs
 
 None.
