@@ -51,6 +51,21 @@ function testGetDigits() {
 		expectedOutput: [6]
 	};
 
+	test2 = {
+		input: 76,
+		expectedOutput: [6, 7]
+	};
+
+	test3 = {
+		input: 358,
+		expectedOutput: [3, 5, 8]
+	};
+
+	test4 = {
+		input: 4253453,
+		expectedOutput: [4, 2, 5, 3, 4, 5, 3]
+	}
+
 	tests = [test1];
 	runTestArray(tests, getDigits);
 }
