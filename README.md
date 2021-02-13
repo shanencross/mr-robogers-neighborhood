@@ -37,6 +37,11 @@ Once the website is open:
 * Input a number in the textbox, and press submit to see the result
 * To see another result, input another number in the textbox, and press submit again
 
+To run the tests:
+* Open the website as described above, then open your browser's JavaScript console
+* type _runTests()_ in the console and press enter
+* The resulting output should display the tests, and whether they succeed or fail
+
 # Tests
 
 Describe: beepBoop()
