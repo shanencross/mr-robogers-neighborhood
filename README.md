@@ -31,7 +31,7 @@ To run locally:
 * Open _index.html_ in a web browser
 
 Or, to view online:
-* Visit shanencross.github.io/mr-robogers-neighborhood/
+* Visit https://shanencross.github.io/mr-robogers-neighborhood/
 
 Once the website is open:
 * Input a number in the textbox, and press submit to see the result
