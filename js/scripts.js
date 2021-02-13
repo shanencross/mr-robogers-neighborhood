@@ -1,6 +1,22 @@
 // scripts.js
 // Main script for website
 
+$(document).ready(function() {
+	$("#inputForm").submit(function(event) {
+		event.preventDefault();
+		
+		$("#results").show();
+		$("ul#numberList").empty();
+
+		inputNumber = parseInt($("input#numberInput").val());
+		
+		const results = beepBoop(inputNumber);
+		for (const result of results) {
+			$("ul#numberList").append("<li>" + result + "</li>");
+		}
+	})
+});
+
 function beepBoop(number) {
 	let result = [];
 
