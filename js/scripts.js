@@ -24,10 +24,15 @@ function beepBoop(number) {
 
 function getDigits(number) {
 	const onesDigit = number % 10;
-	const tensDigit = Math.floor(number / 10);
+	const tensDigit = Math.floor((number % 100) / 10);
+	const hundredsDigit = Math.floor(number / 100);
 	digits = [onesDigit];
-	if (tensDigit != 0) {
+	if (hundredsDigit != 0 || tensDigit != 0) {
 		digits.push(tensDigit);
 	}
+	if (hundredsDigit != 0) {
+		digits.push(hundredsDigit);
+	}
+
 	return digits;
 }
